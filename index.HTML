@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Anomali</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+</head>
+
+<body>
+
+    <div id="loader">
+
+    <div class="loader-content">
+
+        <h1>For Anomali</h1>
+
+        <p>Loading Memories...</p>
+
+        <div class="loader-bar">
+
+            <div class="loader-progress"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Background Blur -->
+    <div class="background-overlay"></div>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                Every ending deserves to be remembered.
+            </p>
+
+            <h1>
+                For Anomali
+            </h1>
+
+            <p class="hero-desc">
+                Seven stories.
+                Seven memories.
+                One place to remember them forever.
+            </p>
+
+            <button id="enterBtn">
+                Enter
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= HOME ================= -->
+
+    <main id="homePage">
+
+        <section class="home-title">
+
+            <h2>
+                Choose Your Story
+            </h2>
+
+            <p>
+                Unlock your own memory.
+            </p>
+
+        </section>
+
+        <section class="profile-grid">
+            
+
+            <div class="profile-card" data-id="1">
+                <span>🔒</span>
+                <h3>Risma</h3>
+            </div>
+
+            <div class="profile-card" data-id="2">
+                <span>🔒</span>
+                <h3>Caya</h3>
+            </div>
+
+            <div class="profile-card" data-id="3">
+                <span>🔒</span>
+                <h3>Hera</h3>
+            </div>
+
+            <div class="profile-card" data-id="4">
+                <span>🔒</span>
+                <h3>Diah</h3>
+            </div>
+
+            <div class="profile-card" data-id="5">
+                <span>🔒</span>
+                <h3>Mitha</h3>
+            </div>
+
+            <div class="profile-card" data-id="6">
+                <span>🔒</span>
+                <h3>Jaya</h3>
+            </div>
+
+            <div class="profile-card" data-id="7">
+                <span>🔒</span>
+                <h3>Michael</h3>
+            </div>
+
+        </section>
+
+        <!-- Gallery -->
+
+        <section class="memory-gallery">
+
+            <h2>
+                Our Memories
+            </h2>
+
+            <div class="gallery-grid">
+
+                <!-- nanti otomatis dari JS -->
+
+            </div>
+
+        </section>
+
+        <!-- Closing -->
+
+        <section class="closing">
+
+            <h2>
+                Until We Meet Again.
+            </h2>
+
+            <p>
+
+                Some people become memories.
+                Some memories become home.
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ================= PROFILE ================= -->
+
+<section id="profilePage">
+
+    <div id="profileContent"></div>
+
+</section>
+
+    <!-- ================= PASSWORD POPUP ================= -->
+
+    <div class="popup hidden" id="passwordPopup">
+
+        <div class="popup-box">
+
+            <h2>
+                🔒
+            </h2>
+
+            <h3>
+                Enter Password
+            </h3>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Your password">
+
+            <div class="popup-button">
+
+                <button id="cancelBtn">
+                    Cancel
+                </button>
+
+                <button id="confirmBtn">
+                    Unlock
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= MUSIC ================= -->
+
+    <audio id="bgMusic"></audio>
+
+
+
+<!-- ================= JS ================= -->
+
+<script src="js/profiles.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/music.js"></script>
+<script src="js/app.js"></script>
+
+
+
+</body>
+
+</html>
