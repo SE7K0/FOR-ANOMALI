@@ -1,0 +1,397 @@
+/* ==========================================
+   FADE IN
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   FADE UP
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   FADE DOWN
+========================================== */
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   ZOOM IN
+========================================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   FLOAT
+========================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   GLOW
+========================================== */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 0 rgba(212,175,55,.2);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 30px rgba(212,175,55,.6);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 rgba(212,175,55,.2);
+
+    }
+
+}
+
+/* ==========================================
+   SHIMMER
+========================================== */
+
+@keyframes shimmer{
+
+    0%{
+
+        transform:translateX(-100%);
+
+    }
+
+    100%{
+
+        transform:translateX(200%);
+
+    }
+
+}
+
+/* ==========================================
+   SHAKE
+========================================== */
+
+@keyframes shake{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    20%{
+
+        transform:translateX(-8px);
+
+    }
+
+    40%{
+
+        transform:translateX(8px);
+
+    }
+
+    60%{
+
+        transform:translateX(-8px);
+
+    }
+
+    80%{
+
+        transform:translateX(8px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ==========================================
+   ROTATE
+========================================== */
+
+@keyframes rotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+   SCALE HOVER
+========================================== */
+
+.scale-hover{
+
+    transition:.35s;
+
+}
+
+.scale-hover:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* ==========================================
+   FLOAT CLASS
+========================================== */
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   FADE
+========================================== */
+
+.fade{
+
+    animation:fadeIn .8s ease forwards;
+
+}
+
+/* ==========================================
+   FADE UP
+========================================== */
+
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+/* ==========================================
+   FADE DOWN
+========================================== */
+
+.fade-down{
+
+    animation:fadeDown .8s ease forwards;
+
+}
+
+/* ==========================================
+   ZOOM
+========================================== */
+
+.zoom{
+
+    animation:zoomIn .8s ease forwards;
+
+}
+
+/* ==========================================
+   GLOW BUTTON
+========================================== */
+
+.glow{
+
+    animation:glow 3s infinite;
+
+}
+
+/* ==========================================
+   SHAKE
+========================================== */
+
+.shake{
+
+    animation:shake .4s;
+
+}
+
+/* ==========================================
+   ROTATE
+========================================== */
+
+.rotate{
+
+    animation:rotateSlow 20s linear infinite;
+
+}
+
+/* ==========================================
+   DELAY
+========================================== */
+
+.delay-1{
+
+    animation-delay:.2s;
+
+}
+
+.delay-2{
+
+    animation-delay:.4s;
+
+}
+
+.delay-3{
+
+    animation-delay:.6s;
+
+}
+
+.delay-4{
+
+    animation-delay:.8s;
+
+}
+
+.delay-5{
+
+    animation-delay:1s;
+
+}
+
+/* ==========================================
+   PAGE TRANSITION
+========================================== */
+
+.fade-in{
+    animation: fadeIn .5s ease forwards;
+}
+
+.fade-out{
+    animation: fadeOut .35s ease forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeOut{
+
+    from{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+    to{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+}
